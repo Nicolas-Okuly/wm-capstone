@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "question": "If 5x - 3 = 2x + 12, what is the value of x?",
+        "choices": ["3", "5", "6", "9"],
+        "correctAnswer": "5",
+        "topic": "Linear equations",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Subtract 2x from both sides: 3x - 3 = 12. Then add 3: 3x = 15. Divide by 3: x = 5."
+    },
+    {
+        "id": 2,
+        "question": "The function f is defined by f(x) = x² - 6x + 9. What is the minimum value of f(x)?",
+        "choices": ["0", "3", "6", "9"],
+        "correctAnswer": "0",
+        "topic": "Quadratics",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "f(x) = (x - 3)². The minimum is at x = 3, and f(3) = 0."
+    },
+    {
+        "id": 3,
+        "question": "A system of equations has no solution. What must be true about the lines?",
+        "choices": [
+        "They intersect at one point",
+        "They are the same line",
+        "They are parallel with different y-intercepts",
+        "They are perpendicular"
+        ],
+        "correctAnswer": "They are parallel with different y-intercepts",
+        "topic": "Systems of equations",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "No solution means the lines never intersect—parallel lines with different y-intercepts."
+    },
+    {
+        "id": 4,
+        "question": "A circle has a circumference of 10π. What is its radius?",
+        "choices": ["5", "10", "2.5", "20"],
+        "correctAnswer": "5",
+        "topic": "Circles",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "C = 2πr → 10π = 2πr → r = 5"
+    },
+    {
+        "id": 5,
+        "question": "What is the solution to the inequality -2(x - 4) > 6?",
+        "choices": ["x < 1", "x > 1", "x > 7", "x < 7"],
+        "correctAnswer": "x < 1",
+        "topic": "Inequalities",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Distribute: -2x + 8 > 6 → -2x > -2 → x < 1 (flip the sign!)"
+    },
+    {
+        "id": 6,
+        "question": "The graph of y = ax² + bx + c opens downward. What is true about a?",
+        "choices": ["a > 0", "a = 0", "a < 0", "a = 1"],
+        "correctAnswer": "a < 0",
+        "topic": "Quadratics",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "A downward-opening parabola has a negative 'a' value."
+    },
+    {
+        "id": 7,
+        "question": "One solution to |x - 3| = 5 is:",
+        "choices": ["x = 2", "x = -2", "x = -8", "x = 8"],
+        "correctAnswer": "x = 8",
+        "topic": "Absolute value",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "x - 3 = ±5 → x = 8 or x = -2"
+    },
+    {
+        "id": 8,
+        "question": "Which value of x satisfies 3x + 2 < 11?",
+        "choices": ["x > 3", "x < 3", "x > 2", "x < 2"],
+        "correctAnswer": "x < 3",
+        "topic": "Inequalities",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "3x < 9 → x < 3"
+    },
+    {
+        "id": 9,
+        "question": "If f(x) = 2x² - x + 1, what is f(3)?",
+        "choices": ["10", "16", "14", "18"],
+        "correctAnswer": "16",
+        "topic": "Functions",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "f(3) = 2(9) - 3 + 1 = 18 - 3 + 1 = 16"
+    },
+    {
+        "id": 10,
+        "question": "If sin(θ) = 0.5 and 0° < θ < 180°, what is one possible value of θ?",
+        "choices": ["30°", "45°", "60°", "90°"],
+        "correctAnswer": "30°",
+        "topic": "Trigonometry",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "sin(30°) = 0.5. Also, sin(150°) = 0.5."
+    },
+    {
+        "id": 11,
+        "question": "Solve for x: 4x² = 64",
+        "choices": ["x = ±4", "x = ±8", "x = 4", "x = 8"],
+        "correctAnswer": "x = ±4",
+        "topic": "Quadratics",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "Divide by 4: x² = 16 → x = ±4"
+    },
+    {
+        "id": 12,
+        "question": "A line has a slope of 3 and passes through (2, 5). What is its equation?",
+        "choices": ["y = 3x + 5", "y = 3x - 1", "y = 3x - 6", "y = 3x + 1"],
+        "correctAnswer": "y = 3x - 1",
+        "topic": "Linear equations",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "Use point-slope: y - 5 = 3(x - 2) → y = 3x - 1"
+    },
+    {
+        "id": 13,
+        "question": "If 2x - 7 = 3x + 4, what is x?",
+        "choices": ["-11", "11", "-1", "1"],
+        "correctAnswer": "-11",
+        "topic": "Linear equations",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "-7 - 4 = x → x = -11"
+    },
+    {
+        "id": 14,
+        "question": "Which of the following is equivalent to (x + 3)(x - 5)?",
+        "choices": ["x² + 8x - 15", "x² - 2x - 15", "x² - 2x + 15", "x² + 5x - 15"],
+        "correctAnswer": "x² - 2x - 15",
+        "topic": "Polynomials",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Use FOIL: x² - 5x + 3x - 15 = x² - 2x - 15"
+    },
+    {
+        "id": 15,
+        "question": "What is the sum of the solutions to x² - 4x - 5 = 0?",
+        "choices": ["4", "5", "-4", "0"],
+        "correctAnswer": "4",
+        "topic": "Quadratics",
+        "difficulty": "Medium",
+        "type": "Multiple Choice",
+        "explanation": "Sum of roots = -(b)/a = -(-4)/1 = 4"
+    },
+    {
+        "id": 16,
+        "question": "Which point lies on the line y = -2x + 6?",
+        "choices": ["(3, 0)", "(2, 2)", "(0, 6)", "(1, 4)"],
+        "correctAnswer": "(0, 6)",
+        "topic": "Linear equations",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Plug x = 0 → y = 6"
+    },
+    {
+        "id": 17,
+        "question": "If (x + 2)(x - 2) = x² - a, what is a?",
+        "choices": ["2", "4", "-4", "0"],
+        "correctAnswer": "4",
+        "topic": "Polynomials",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "(x + 2)(x - 2) = x² - 4"
+    },
+    {
+        "id": 18,
+        "question": "If x² = 49, what is x?",
+        "choices": ["±7", "7", "-7", "0"],
+        "correctAnswer": "±7",
+        "topic": "Radicals and powers",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "x² = 49 → x = ±√49 = ±7"
+    },
+    {
+        "id": 19,
+        "question": "In a triangle, one angle measures 90° and another measures 45°. What is the third angle?",
+        "choices": ["45°", "90°", "30°", "60°"],
+        "correctAnswer": "45°",
+        "topic": "Geometry",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Sum of angles in a triangle is 180°"
+    },
+    {
+        "id": 20,
+        "question": "If f(x) = 1/x, what is f(2)?",
+        "choices": ["0.5", "2", "1", "-2"],
+        "correctAnswer": "0.5",
+        "topic": "Functions",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "f(2) = 1/2 = 0.5"
+    },
+    {
+        "id": 21,
+        "question": "Which of the following represents a linear function?",
+        "choices": ["y = 2^x", "y = x²", "y = x + 5", "y = 1/x"],
+        "correctAnswer": "y = x + 5",
+        "topic": "Functions",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Only y = x + 5 is linear"
+    },
+    {
+        "id": 22,
+        "question": "If a = 2 and b = 3, what is the value of 3a + 2b?",
+        "choices": ["12", "13", "10", "11"],
+        "correctAnswer": "12",
+        "topic": "Algebraic expressions",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "3(2) + 2(3) = 6 + 6 = 12"
+    },
+    {
+        "id": 23,
+        "question": "Which of the following graphs has a slope of zero?",
+        "choices": ["A horizontal line", "A vertical line", "A diagonal line", "A curve"],
+        "correctAnswer": "A horizontal line",
+        "topic": "Graphing",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "Horizontal lines have zero slope"
+    },
+    {
+        "id": 24,
+        "question": "Simplify: (3x²)(2x³)",
+        "choices": ["6x⁵", "5x⁶", "6x⁶", "6x⁷"],
+        "correctAnswer": "6x⁵",
+        "topic": "Exponents",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",      
+        "explanation": "Multiply coefficients and add exponents: 3x2 = 6, x²·x³ = x⁵"
+    },
+    {
+        "id": 25,
+        "question": "In the xy-plane, a line has equation y = 2x - 3. What is the y-intercept?",
+        "choices": ["-3", "2", "3", "0"],
+        "correctAnswer": "-3",
+        "topic": "Linear equations",
+        "difficulty": "Easy",
+        "type": "Multiple Choice",
+        "explanation": "In y = mx + b, the y-intercept is b = -3"
+    }
+]
+  

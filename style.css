@@ -1,0 +1,23 @@
+:root {
+    --black: #121619;
+    --red: #C33C54;
+    --orange: #E57C04;
+    --green: #6F732F;
+    --blue: #4281A4;
+    --white: #F8F1FF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    background-color: var(--red);
+    display: flex;
+}

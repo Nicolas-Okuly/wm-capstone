@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SAT Math Practice</title>
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="shortcut icon" href="./assets/images/math-icon.svg" type="image/x-icon">
+
+        <script src="./assets/scripts/utils.js" defer></script>
+        <script src="./assets/scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <div id="header-left">
+                <img src="./assets/images/math-icon.svg" alt="Math Icon" width="75px">
+                <h1>SAT Math Practice</h1>
+            </div>
+
+            <div id="header-right">
+                <p>Recieve random math problems to try and solve to prepare for the math portion of the SAT.</p>
+                <p>You may use <a href="https://www.desmos.com/practice">Desmos</a>.</p>
+            </div>
+        </header>
+
+        <main id="container">
+            <h3 id="q-question"></h3>
+
+            <ul id="q-meta">
+                <li><b>Question Difficulty:</b> <span id="q-diff"></span></li>
+                <li><b>Question Category:</b> <span id="q-cat"></span></li>
+            </ul>
+
+            <form>
+                <input type="radio" id="option1" name="math-ans" value="option1">
+                <label for="option1" id="option1-label">OPT1</label><br>
+
+                <input type="radio" id="option2" name="math-ans" value="option2">
+                <label for="option2" id="option2-label">OPT2</label><br>
+
+                <input type="radio" id="option3" name="math-ans" value="option3">
+                <label for="option3" id="option3-label">OPT3</label><br>
+
+                <input type="radio" id="option4" name="math-ans" value="option4">
+                <label for="option4" id="option4-label">OPT4</label><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="q-explanation"></p>
+        </main>
+
+        <footer>
+            <p>&copy; Nicolas Okuly &mdash; <span id="copy-year">0000</span></p>
+        </footer>
+    </body>
+</html>
