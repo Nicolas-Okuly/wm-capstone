@@ -14,25 +14,28 @@
     <body>
         <header id="header">
             <div id="header-left">
-                <img src="./assets/images/math-icon.svg" alt="Math Icon" width="75px">
-                <h1>SAT Math Practice</h1>
+                <img src="./assets/images/math-icon.svg" alt="Math Icon">
             </div>
 
             <div id="header-right">
-                <p>Recieve random math problems to try and solve to prepare for the math portion of the SAT.</p>
+                <h1>SAT Math Practice</h1>
+                <p>Recieve random math problems to try and solve, to prepare for the math portion of the SAT.</p>
                 <p>You may use <a href="https://www.desmos.com/practice">Desmos</a>.</p>
+                <p>Points: <b><span id="points">0</span></b></p>
+                <button id="setName" type="button">Set Name</button>
+                <button id="dumpSave" onclick="deleteSave()" type="button">Delete Save</button>
             </div>
         </header>
 
         <main id="container">
-            <h3 id="q-question"></h3>
-
             <ul id="q-meta">
                 <li><b>Question Difficulty:</b> <span id="q-diff"></span></li>
                 <li><b>Question Category:</b> <span id="q-cat"></span></li>
             </ul>
+            <br>
 
-            <form>
+            <h2 id="q-question"></h2>
+            <form id="answer-form">
                 <input type="radio" id="option1" name="math-ans" value="option1">
                 <label for="option1" id="option1-label">OPT1</label><br>
 
@@ -45,10 +48,16 @@
                 <input type="radio" id="option4" name="math-ans" value="option4">
                 <label for="option4" id="option4-label">OPT4</label><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-btn">Submit</button>
             </form>
 
-            <p id="q-explanation"></p>
+            <div id="result-box">
+                <h2 id="q-correct"></h2>
+                <p id="q-explanation"></p>
+
+                <button type="button" onclick="next()">Next</button>
+            </div>
+            
         </main>
 
         <footer>
