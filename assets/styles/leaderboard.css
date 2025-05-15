@@ -1,0 +1,103 @@
+/* Override stuff I don't like */
+body {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* The header */
+#header {
+    margin: -15px;
+}
+
+/* Buttons don't need that here */
+button {
+    border-radius: 0;
+}
+
+/* Relocate notifications */
+#notification {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+}
+
+/* The search bar needs to be wide */
+#search {
+    width: 50%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+/* Light mode (🤮) table styles */
+body.light #leaderboard,
+body.light #leaderboard tr, 
+body.light #leaderboard td,
+body.light #leaderboard th {
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+/* Handle leaderboard styles and rows and all the fun table garbage. */
+#leaderboard {
+    border-collapse: collapse;
+    margin: 5px auto;
+    width: 50%;
+}
+
+#leaderboard,
+#leaderboard tr, 
+#leaderboard td,
+#leaderboard th {
+    border: 1px solid var(--white);
+    padding: 5px;
+}
+
+#leaderboard td:nth-of-type(1) {
+    width: 15px;
+    text-align: center;
+}
+
+#leaderboard td:nth-last-of-type(2),
+#leaderboard th:nth-last-of-type(2) {
+    text-align: left;
+}
+
+#leaderboard td:nth-of-type(3) {
+    text-align: right;
+    width: 100px;
+}
+
+/* Light mode (🤮) modal */
+body.light #modal {
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 1px 1px 15px var(--black);
+}
+
+/* Regular modal */
+#modal {
+    background-color: var(--white);
+    color: var(--black);
+    position: fixed;
+    z-index: 999;
+    top: 40%;
+    left: 50%;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px var(--white);
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Resize table and search bar on mini screens */
+@media screen and (max-width: 760px) {
+    #leaderboard,
+    #search {
+        width: 90%;
+    }
+}

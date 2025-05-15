@@ -1,0 +1,130 @@
+/* Set color variables */
+:root {
+    --black: #121619;
+    --off-black: #212424;
+    --red: #C33C54;
+    --green: #B6C649;
+    --blue: #4281A4;
+    --white: #F8F1FF;
+    --off-white: #cdcad1;
+    --orange: #E57C04;    
+    --gray: #514F59;
+}
+
+/* Override stuff I don't like */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light mode (🤮) styles and overrides */
+body.light {
+    background-color: var(--white);
+    color: var(--white);
+}
+body.light #container {
+    background-color: var(--off-white);
+    color: var(--black);
+}
+body.light footer {
+    background-color: var(--black);
+    color: var(--white)
+}
+
+/* Style the footer */
+footer { 
+    background-color: var(--white);
+    color: var(--black);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+/* Beat up the header and make it to what I want it to */
+#header {
+    background-color: var(--green);
+    color: var(--black);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#header img {
+    width: 100px;
+}
+
+/* Setup all buttons */
+button {
+    background-color: #C33C54;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: var(--white);
+    margin: 8px;
+    font-size: 1rem;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-color: #a13145;
+}
+
+/* Stylize the main container */
+#container {
+    background-color: var(--off-black);
+    padding: 15px;
+    width: fit-content;
+    min-width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+/* Global notification styles */
+#notification {
+    background-color: var(--gray);
+    border-left: solid 5px #0067ff;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    border-radius: 0 15px 15px 0;
+    max-width: 500px;
+}
+#notification:hover {
+    background-color: rgba(204, 204, 204, 0.75);
+}
+#notification #notif-title {
+    text-align: center;
+}
+
+
+/* for those poor small screens */
+@media screen and (max-width: 760px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* The desmos calculator requires hieght to feed */
+#calculator {
+    height: 350px;
+}
+
+/* Dark mode toggle button */
+.dark-mode {
+    position: fixed;
+    bottom: 25px;
+    right: 5px;
+}

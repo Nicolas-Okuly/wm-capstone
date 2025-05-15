@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/styles/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/styles/leaderboard.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/images/math-icon.svg" type="image/x-icon">
+
+    <!-- Scripts -->
+    <script src="./assets/scripts/leaderboard.js" defer></script>
+    <script src="./assets/scripts/utils.js" defer></script>
+
+    <!-- A title ig -->
+    <title>SAT Math Practice Leaderboard</title>
+</head>
+<body>
+    <!-- Toggle theme button -->
+    <button class="dark-mode" id="toggle-mode">
+            <img id="toggle-img" src="./assets/images/light.svg" alt="toggle dark mode" width="50px">
+    </button>
+
+    <!-- Reused header -->
+    <header id="header">
+        <div id="header-right">
+            <!-- Header and nav garbage -->
+            <h1>SAT Math Practice Leaderboard</h1>
+            <h3>Your score is: <span id="score"></span></h3>
+            <a href="/"><button type="button">Back to game</button></a>
+            <button id="submit" onclick="submitScoreBtn()" type="button">Send Score to Board</button><br>
+        </div>
+    </header>
+
+    <br>
+    <!-- Notifications -->
+    <div id="notification">
+        <h3 id="notif-title"></h3>
+        <h4 id="notif-description"></h4>
+    </div>
+
+    <!-- Submit name modal -->
+    <div id="modal">
+        <form id="name">
+            <label for="name-input">What is your name?</label>
+            <input type="text" name="name" id="name-input">
+            <br>
+            <button type="submit">Submit name</button>
+        </form>
+    </div>
+
+    <!-- Table search bar-->
+    <input type="text" name="search-bar" id="search" placeholder="Search for a name..." onkeyup="filterList()" autocomplete="off">
+
+    <br><br>
+
+    <!-- Leaderboard table -->
+    <table id="leaderboard">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Table to glaze myself --> 
+    <footer>
+            <p>&copy; Nicolas Okuly &mdash; <span id="copy-year">0000</span></p>
+    </footer>
+</body>
+</html>
