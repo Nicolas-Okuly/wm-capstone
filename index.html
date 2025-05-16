@@ -88,6 +88,8 @@
             <script>
                 let elt = document.getElementById('calculator');
                 let calculator = Desmos.GraphingCalculator(elt);
+
+                if(window.location.toString().includes("index.html")) window.location = window.lcation.split("index.html")[0];
             </script>
         </main>
 
