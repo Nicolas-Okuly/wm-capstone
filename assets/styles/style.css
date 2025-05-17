@@ -12,7 +12,9 @@
 }
 
 /* Override stuff I don't like */
-* {
+*,
+::after,
+::before {
     box-sizing: border-box;
     margin: 0;
 }
@@ -62,6 +64,9 @@ footer {
 }
 #header img {
     width: 100px;
+}
+#header-right p {
+    max-width: 50vw;
 }
 
 /* Setup all buttons */
@@ -114,6 +119,10 @@ button:hover {
     #header {
         flex-direction: column;
         text-align: center;
+    }
+
+    #header-right p {
+        max-width: 90vw;
     }
 }
 

@@ -69,7 +69,7 @@ async function handleLeaderboard() {
             "name": usableData[0],
             "score": usableData[1]
         });
-    })
+    });
 
     // Start pushing each person to the table leaderboard.
     let i = 1;
